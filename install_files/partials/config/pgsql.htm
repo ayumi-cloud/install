@@ -53,15 +53,18 @@
 <div class="form-group">
     <label for="dbPass" class="control-label col-sm-4">Postgres Password</label>
     <div class="col-sm-8">
+        <div class="password-field">
         <input
             id="dbPass"
-            type="sensitive"
-            allowCopy="false"
-            hideOnTabChange="true"
+            type="password"
             name="db_pass"
-            class="form-control"
+            class="form-control-pass"
             value=""
             />
+            <div id="dbPassToggle">
+                <div class="eye-open"></div>
+            </div>
+        </div> 
             <span class="help-block">Password for the specified user.</span>
     </div>
 </div>
